@@ -1,0 +1,11 @@
+Class 2:
+
+            Generic Method Vs Polymorphism
+ Generic Method:
+ A single method which works for different types of data.
+ Polymorphism:
+ Multiple methods with same name but different no.of parameters,or datatypes.
+
+-Generic Methods with Variable List of Arguments
+[Using an Array; Using an Object; Using Ellipsis]
+Object class is the super class of all classes
