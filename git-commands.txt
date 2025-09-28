@@ -11,3 +11,8 @@ git add filename
 git commit git commit -m "message"
 
 git push origin main
+               
+
+               From GitHub to VS Code(Local Git)
+for the first time when we want a rep:git clone "https://github.com/AbbuGunasekhar/DATA-STRUCTURES-AND-ALGORITHMS.git"
+git pull
