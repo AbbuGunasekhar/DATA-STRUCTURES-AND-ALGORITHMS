@@ -1,3 +1,12 @@
 git clone "https://github.com/AbbuGunasekhar/DATA-STRUCTURES-AND-ALGORITHMS.git"
 
+
+git status => Untracked (git add) =>Staging Area (git commit -m)=>Local Git (git push origin)
+
+insert->add->commit->push
+
 git add filename
+
+git commit git commit -m "message"
+
+git push origin main
