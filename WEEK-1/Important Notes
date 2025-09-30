@@ -1,5 +1,8 @@
-Class 2:
+Class 1: Introduction
 
+The largest ever unit: Quintilion Bytes: 10 power 18 (US standard) , 10 power 30 (old standard)
+
+Class 2:
             Generic Method Vs Polymorphism
  Generic Method:
  A single method which works for different types of data.
@@ -9,3 +12,8 @@ Class 2:
 -Generic Methods with Variable List of Arguments
 [Using an Array; Using an Object; Using Ellipsis]
 Object class is the super class of all classes
+
+Class 3:
+[Defining Generic Class;
+ Generic Class with Arrays; 
+ Generic Class with Abstract Data Type]
