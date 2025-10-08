@@ -1,0 +1,79 @@
+Class 11: Array Data Structure
+
+Pysical Address: index: i
+Logical Address: arr[i] = M+(i-L)*w
+Size=(U-L+1),Where M=starting Location of memory, L=lower bound
+We can find address of ith elememt using above formula
+
+Characteristics: Ordered,Finite,Homogeneous
+Types : 1D & Multi-Dimensional, Sparse matrix
+Sparse matrix: Majority of the values are null
+Ex: Upper left Traingular, Lower right Traingular,Diagonal Sparse Matrix etc
+
+
+Class 12: Programming for Arrays
+
+traversal,insertion,deletion
+//No of columns in each row can be different
+int arr[][]=new int[5][];
+arr[0]=new int[10];
+arr[1]=new int[4]
+
+Class 13:ArrayList
+
+add(): add element at end
+remove(index): remove element at position
+remove(Object): remove first occurence of object
+removeAll(collection): remove all elements in the given collecton( Disjoint )
+removeIf(condition): based on condition
+clear(): Remove all elements
+isEmpty()
+get(index)
+set(index,E elem)
+indexOf(Object o)
+lastIndexOf(Object o)
+
+Sorting a ArrayList
+
+1)using Collections.sort(arraylist);
+2)using ArrayList.sort();
+3)Comparator for Custom Class
+
+Bulk Operations:
+clone()
+toArray()
+subList(from,to)
+
+Class 14:Arrays class
+
+java.util.Arrays;
+->all are static methods in Arrays, so for all methods we use Arrays.method
+Methods:
+Arrays.asList()
+binarySearch()
+copyOf()
+equals()
+deepEquals()-> for nested arrays
+fill(arr,fill)
+sort(arr)
+sort(arr,start,end)
+toString() && hashCode()
+deepToString() && deepHashCode()
+
+
+Class 15:Vector
+
+By default its size doubled if we don't specify
+add()
+addElement()
+insertElementAt()
+addAll()
+removeElementAt()
+removeElement()
+removeAll()// size will become 0
+clear()// all elements remove
+retailAll()// Intersection
+setElemetAt()
+contains()
+capacity()
+size()

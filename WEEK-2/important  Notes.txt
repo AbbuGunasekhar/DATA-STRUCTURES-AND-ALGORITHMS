@@ -1,0 +1,86 @@
+Class 6 : Introduction
+
+Java Collection Framework(JCF):
+1)Collection
+2)Map
+
+JCF is available in java.util package.Used since Java 2
+
+Before JCF, there was Java Legacy Classes (Ad-hoc),they are:
+1)Vector
+2)Hashtable
+3)Stack
+4)Dictionary
+5)Properties
+
+
+Class 7:
+
+1)COLLECTIONS:
+
+i)List:
+ArrayList,LinkedList
+Default size: 10
+
+ii)Queue:
+Queue extends LinkedList, Queue extends Deque
+
+iii)Set
+HashSet,LinkedHashSet,TreeSet,NavigableSet,EnumSet
+
+
+2)Map
+HashMap,LinkedHashMap(maintains insertion order),TreeMap,NavigableMap,IndentityMap,WeekHashMap
+
+
+
+Class 8: Set
+
+(no duplicates)
+interface Set<T>
+interface SortedSet<T> => first(), last()
+interface NavigableSet<T> : return based on closest-match
+class EnumSet<T>:
+
+
+Class 9: Map
+
+class Map<K,V>
+default size:16 new Map<>(capacity,fill ratio), defauilt fill ratio: 0.75
+Map.Entry
+interface SortedMap<K,V>
+class EnumMap<K extends Enum<K>, V) (certain range of values)
+class HashMap<K,V> (no own method for HashMap)
+class TreeMap<K,V>
+class LinkedHashMap<K,V>
+
+
+Class 10: Java Legacy Classes
+1)Vector: Synchronized & contains Legacy methods which are not part JFC
+class Vector<E>
+
+2)Hashtable: 
+class Hashtable<K,V>
+->Similar to HashMap, but neither keys & nor values can be null
+->Synchronized , while HashMap not Synchronized
+
+3)Stack: Subclass of Vector
+class Stack<E>
+Lifo
+
+4)Dictionary: Its is an abstract class, fully supressed by map
+
+
+5)Properties: Similar to Hashtable, it stores Key Value Pai5s in the form of Strings and provides Default Values 
+Properties extends Hashtable
+Ex: Properties defauls;
+
+store() & load()
+Note: 1)information in Properties can be stored or loaded from a disk easily;
+2) You caN WRITE Properties to stream or read back, which MAKES convinient for simple databses
+
+6)Enumenarion:
+interface Enumenarion<E>
+It iterate Collection one at a time
+Replaced by Iterable
+boolean hashMoreElements() & Object nextElement()

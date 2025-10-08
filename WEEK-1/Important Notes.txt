@@ -1,0 +1,78 @@
+Class 1: Introduction
+
+The largest ever unit: Quintilion Bytes: 10 power 18 (US standard) , 10 power 30 (old standard)
+
+Class 2:
+            Generic Method Vs Polymorphism
+ Generic Method:
+ A single method which works for different types of data.
+ Polymorphism:
+ Multiple methods with same name but different no.of parameters,or datatypes.
+
+-Generic Methods with Variable List of Arguments
+[Using an Array; Using an Object; Using Ellipsis]
+Object class is the super class of all classes
+
+Class 3:
+[Defining Generic Class;
+ Generic Class with Arrays; 
+ Generic Class with Abstract Data Type]
+
+Class 4:
+ Important Points
+ 1)We cant intantiate an array whose element type is a type parameter
+  T a[]=new T[5];// Inavalid.i.e  error: generic array creation
+  Because:  don't know how much memory to allocate at compile time
+
+  2)we can have static,non-static,over-loaded methods in generic class
+  i.e. A generic method in a generic class can be declared as static
+
+  3) If a generic class has type parameter T, then all its methods can use that
+
+  4)In type parameter we cant pass primitive data type(int,double...)
+  Gen<int> obj=new Gen<int>(); //Invalid
+  Gen<Integer> obj=new Gen<>();//Valid
+   Gen<double> obj=new Gen<double>(); //Invalid
+  Gen<Double> obj=new Gen<>();//Valid
+  Gen<String> obj=new Gen<>();//Valid
+
+  5)A generic class can have multiple type parameters//(UPTO 256)
+
+  6) Using Generic Class, while creating object we can give any type,but it may rise errors.
+
+Class 5: Bounded Argument Generic Class
+-Bounded Types in Generic Class Definition
+-Wildcard in Java Generics
+-Bounded Wildcard Arguments
+-Examples
+-Guidelines for Wildcard
+
+1)Upper Bound of Argument 
+class Gen<T extends Number> (To make Gen class Applicable only for Numbers Integer,Double but not Strings)but still bound error
+
+
+We get error when=>
+type1.compare(type2)  i.e (int[]).compare(float[])
+
+2)Wild Card
+filename.docx similar to *.docx
+?  represents wild-card, which replaces T i.e
+CompareMarks(Student <?>t) is used instead of CompareMarks(Student <T>t), Now no error.
+
+3)Bounded Wild Cards
+i)upper bounded wildcard=> (? extends A) => uses its own scope and its sub-classes
+ii)upper bounded wildcard=> (? super A) > uses parent & its own scope
+iii)unbound wildcard=> (?)  do not depend on type parameter - uses Object Class
+
+important points:
+1)you can specify upper bound or lower bound , but not both
+2)Bounded Wild Cards ensures type-safety
+
+wild-card can be used as parameter, field, return-type or local-variable
+However, wild-card not allowed for generic method invocation and generic class instance creation or a super-type.
+
+Hints:
+Use extend - to get from a structure -in
+Use super - to put values to a structure - out 
+
+No WildCard - They use both in & out
