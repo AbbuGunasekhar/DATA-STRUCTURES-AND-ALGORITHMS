@@ -1,0 +1,5 @@
+Stack: Last In First Out (LIFO)
+
+Stack Representation:
+1)Using Arrays
+2)Using LinkedList

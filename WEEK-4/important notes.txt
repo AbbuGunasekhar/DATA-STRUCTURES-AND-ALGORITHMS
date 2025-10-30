@@ -1,0 +1,13 @@
+A linked list has "data" and "address"
+
+Types of LinkedList:
+
+i)Single LinkedList-> data,next
+ii)Double LinkedList-> data,next,prev
+iii)Circular LinkedList-> first and last nodes connected
+
+Applications of LinkedList:
+
+1)Sparse Matrix Manupulation
+2)Polynomial Manupulation
+3)Memory Management

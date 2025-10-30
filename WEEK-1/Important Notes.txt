@@ -1,6 +1,6 @@
 Class 1: Introduction
 
-The largest ever unit: Quintilion Bytes: 10 power 18 (US standard) , 10 power 30 (old standard)
+The largest ever unit for data: Quintilion Bytes: 10 power 18 (US standard) , 10 power 30 (old standard)
 
 Class 2:
             Generic Method Vs Polymorphism
@@ -50,7 +50,6 @@ Class 5: Bounded Argument Generic Class
 1)Upper Bound of Argument 
 class Gen<T extends Number> (To make Gen class Applicable only for Numbers Integer,Double but not Strings)but still bound error
 
-
 We get error when=>
 type1.compare(type2)  i.e (int[]).compare(float[])
 
@@ -60,8 +59,8 @@ filename.docx similar to *.docx
 CompareMarks(Student <?>t) is used instead of CompareMarks(Student <T>t), Now no error.
 
 3)Bounded Wild Cards
-i)upper bounded wildcard=> (? extends A) => uses its own scope and its sub-classes
-ii)upper bounded wildcard=> (? super A) > uses parent & its own scope
+i)upper bounded wildcard=> "? extends A — allows A and its subclasses (uses A’s own type and below in the hierarchy).
+ii)lower bounded wildcard=> "? super A — allows A and its superclasses (uses A’s own type and above in the hierarchy).
 iii)unbound wildcard=> (?)  do not depend on type parameter - uses Object Class
 
 important points:
@@ -72,7 +71,7 @@ wild-card can be used as parameter, field, return-type or local-variable
 However, wild-card not allowed for generic method invocation and generic class instance creation or a super-type.
 
 Hints:
-Use extend - to get from a structure -in
-Use super - to put values to a structure - out 
+Use extend - to get from a structure -in => can't add
+Use super - to put values to a structure - out => can add=> Read as Object Only
 
 No WildCard - They use both in & out
